@@ -1,4 +1,5 @@
 
+
 rm(list=ls());
 
 setwd("C:/Alex/AulasWEB/ExploratoryDataAnalysis/Project_1");
@@ -17,6 +18,9 @@ power1 <- subset(power, as.Date(date) <= as.Date('2007-02-02') & as.Date(date) >
 summary(power1);
 
 Sys.setlocale("LC_TIME", "English");
+
+par(mfrow = c(1,1));
+par(mar = c(4,4,2,2));
 
 plot(power1$datetime, power1$Sub_metering_1, type="o", pch='', xlab = "", ylab = "Energy sub metering")
 points(power1$datetime, power1$Sub_metering_2, type="o", pch='', xlab = "", col="red")
