@@ -1,4 +1,5 @@
 
+
 rm(list=ls());
 
 setwd("C:/Alex/AulasWEB/ExploratoryDataAnalysis/Project_1");
@@ -23,3 +24,4 @@ png(file = "plot1.png", width = 480, height = 480, units = "px");
 with(power1, hist(Global_active_power, breaks = 12, col = "red", 
                   main = "Global Active Power", xlab = "Global Active Power (kilowatts)"));
 dev.off();
+
