@@ -18,9 +18,11 @@ summary(power1);
 
 Sys.setlocale("LC_TIME", "English");
 
+par(mfrow = c(1,1));
+par(mar = c(4,4,2,2));
+
 with(power1, plot(datetime, Global_active_power, type="o", pch='', xlab = "", ylab = "Global Active Power (kilowatts)"))
 
 png(file = "plot2.png", width = 480, height = 480, units = "px");
 with(power1, plot(datetime, Global_active_power, type="o", pch='', xlab = "", ylab = "Global Active Power (kilowatts)"))
 dev.off();
-
